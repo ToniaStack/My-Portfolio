@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,17 +25,69 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
-    body { font-family: "Plus Jakarta Sans", sans-serif; }
-    a:focus-visible, button:focus-visible { outline: 2px solid #1F6B4A; outline-offset: 3px; border-radius: 6px; }
-    .tag { display: inline-flex; border: 1px solid #DCE5DF; background: #F4F8F5; color: #17553A; border-radius: 6px; padding: .25rem .6rem; font-size: .75rem; font-weight: 500; }
-    .card { border: 1px solid #DCE5DF; border-radius: 12px; background: #fff; overflow: hidden; transition: border-color .2s ease; }
-    .card:hover { border-color: #1F6B4A; }
-    .card-link { color: #1F6B4A; font-weight: 600; font-size: .875rem; }
-    .card-link:hover { color: #14211B; text-decoration: underline; text-underline-offset: 4px; }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
+    }
+
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid #1F6B4A;
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .tag {
+      display: inline-flex;
+      border: 1px solid #DCE5DF;
+      background: #F4F8F5;
+      color: #17553A;
+      border-radius: 6px;
+      padding: .25rem .6rem;
+      font-size: .75rem;
+      font-weight: 500;
+    }
+
+    .card {
+      border: 1px solid #DCE5DF;
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden;
+      transition: border-color .2s ease;
+    }
+
+    .card:hover {
+      border-color: #1F6B4A;
+    }
+
+    .card-link {
+      color: #1F6B4A;
+      font-weight: 600;
+      font-size: .875rem;
+    }
+
+    .card-link:hover {
+      color: #14211B;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+      }
+    }
   </style>
 </head>
 
@@ -49,20 +102,28 @@
         <a class="text-sm font-medium text-body hover:text-brand" href="#about">About</a>
         <a class="text-sm font-medium text-body hover:text-brand" href="#skills">Skills</a>
         <a class="text-sm font-medium text-body hover:text-brand" href="#projects">Projects</a>
-        <a href="#contact" class="rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-dark">Contact me</a>
+        <a href="#contact"
+          class="rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-dark">Contact
+          me</a>
       </div>
 
-      <button id="menuToggle" class="grid h-10 w-10 place-items-center rounded-lg border border-line text-xl text-ink md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+      <button id="menuToggle"
+        class="grid h-10 w-10 place-items-center rounded-lg border border-line text-xl text-ink md:hidden"
+        aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
         <span id="menuIcon" aria-hidden="true">☰</span>
       </button>
     </nav>
 
     <div id="mobileMenu" class="hidden border-t border-line px-5 pb-4 md:hidden">
       <div class="flex flex-col pt-2">
-        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand" href="#about">About</a>
-        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand" href="#skills">Skills</a>
-        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand" href="#projects">Projects</a>
-        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand" href="#contact">Contact</a>
+        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand"
+          href="#about">About</a>
+        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand"
+          href="#skills">Skills</a>
+        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand"
+          href="#projects">Projects</a>
+        <a class="mobile-link rounded-lg px-3 py-3 font-medium text-body hover:bg-brand-tint hover:text-brand"
+          href="#contact">Contact</a>
       </div>
     </div>
   </header>
@@ -77,17 +138,23 @@
             Software developer building clear, reliable web applications.
           </h1>
           <p class="mt-6 max-w-xl text-lg leading-8 text-body">
-            I design and build frontend and full-stack products with clean interfaces and practical features that solve real problems.
+            I design and build frontend and full-stack products with clean interfaces and practical features that solve
+            real problems.
           </p>
           <div class="mt-8 flex flex-wrap gap-4">
-            <a href="#projects" class="rounded-lg bg-brand px-6 py-3.5 font-semibold text-white transition hover:bg-brand-dark">View my projects</a>
-            <a href="./Tonia's Resume.pdf" download class="rounded-lg border border-brand px-6 py-3.5 font-semibold text-brand transition hover:bg-brand-light">Download CV</a>
+            <a href="#projects"
+              class="rounded-lg bg-brand px-6 py-3.5 font-semibold text-white transition hover:bg-brand-dark">View my
+              projects</a>
+            <a href="./Tonia's Resume.pdf" download
+              class="rounded-lg border border-brand px-6 py-3.5 font-semibold text-brand transition hover:bg-brand-light">Download
+              CV</a>
           </div>
           <p class="mt-8 text-sm text-body">Based in Nigeria. Open to opportunities and collaborations.</p>
         </div>
 
         <div class="mx-auto w-full max-w-md lg:max-w-none">
-          <img src="./prof.jpeg" alt="Portrait of Tonia Onyeka" class="h-[26rem] w-full rounded-2xl border border-line object-cover object-top sm:h-[30rem]" />
+          <img src="./prof.jpeg" alt="Portrait of Tonia Onyeka"
+            class="h-[26rem] w-full rounded-2xl border border-line object-cover object-top sm:h-[30rem]" />
         </div>
       </div>
     </section>
@@ -98,10 +165,13 @@
         <h2 class="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">About me</h2>
         <div class="max-w-3xl">
           <p class="text-lg leading-8 text-body">
-            I started my journey in technology at SQI College of ICT, where I learned to build with code. Since then, I have kept growing across frontend and backend development, creating projects that bring design and functionality together.
+            I started my journey in technology at SQI College of ICT, where I learned to build with code. Since then, I
+            have kept growing across frontend and backend development, creating projects that bring design and
+            functionality together.
           </p>
           <p class="mt-5 leading-7 text-body">
-            I enjoy turning complex ideas into clear, easy-to-use products. I’m always learning, and I’m looking for opportunities to contribute to meaningful products and strong teams.
+            I enjoy turning complex ideas into clear, easy-to-use products. I’m always learning, and I’m looking for
+            opportunities to contribute to meaningful products and strong teams.
           </p>
           <div class="mt-8 grid gap-4 sm:grid-cols-2">
             <div class="rounded-xl border border-line p-5">
@@ -122,25 +192,30 @@
       <div class="mx-auto max-w-6xl">
         <div class="mb-10 max-w-2xl">
           <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Skills</h2>
-          <p class="mt-3 leading-7 text-body">The technologies and tools I use across frontend, backend, and day-to-day development.</p>
+          <p class="mt-3 leading-7 text-body">The technologies and tools I use across frontend, backend, and day-to-day
+            development.</p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
           <div class="rounded-xl border border-line bg-white p-6">
             <h3 class="mb-4 font-semibold">Frontend</h3>
             <div class="flex flex-wrap gap-2">
-              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Bootstrap</span>
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span
+                class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span><span
+                class="tag">Tailwind CSS</span><span class="tag">Bootstrap</span>
             </div>
           </div>
           <div class="rounded-xl border border-line bg-white p-6">
             <h3 class="mb-4 font-semibold">Backend and data</h3>
             <div class="flex flex-wrap gap-2">
-              <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MongoDB</span><span class="tag">Firebase</span><span class="tag">REST APIs</span>
+              <span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MongoDB</span><span
+                class="tag">Firebase</span><span class="tag">REST APIs</span>
             </div>
           </div>
           <div class="rounded-xl border border-line bg-white p-6">
             <h3 class="mb-4 font-semibold">Tools and workflow</h3>
             <div class="flex flex-wrap gap-2">
-              <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Vercel</span><span class="tag">Responsive design</span>
+              <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span
+                class="tag">Vercel</span><span class="tag">Responsive design</span>
             </div>
           </div>
         </div>
@@ -153,43 +228,89 @@
         <div class="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
             <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Projects</h2>
-            <p class="mt-3 max-w-2xl leading-7 text-body">Selected work covering interface design, application logic, and practical product features.</p>
+            <p class="mt-3 max-w-2xl leading-7 text-body">Selected work covering interface design, application logic,
+              and practical product features.</p>
           </div>
-          <a href="https://github.com/ToniaStack" target="_blank" rel="noopener noreferrer" class="card-link">More on GitHub</a>
+          <a href="https://github.com/ToniaStack" target="_blank" rel="noopener noreferrer" class="card-link">More on
+            GitHub</a>
         </div>
 
         <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
 
           <article class="card">
-            <img src="./cogops.png" alt="CogOps website preview" class="h-52 w-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=900';">
+            <img src="./cogops.png" alt="CogOps website preview" class="h-52 w-full object-cover" loading="lazy"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=900';">
             <div class="p-6">
               <p class="text-sm font-medium text-brand">Web application</p>
               <h3 class="mt-1 text-xl font-semibold">CogOps Website</h3>
-              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A modern website for a cognitive operations concept, designed to present the product clearly and keep visitors focused.</p>
-              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span></div>
-              <a class="card-link" href="https://cog-ops-website-one.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a>
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A modern website for a cognitive operations
+                concept, designed to present the product clearly and keep visitors focused.</p>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">Next.js</span><span class="tag">Tailwind
+                  CSS</span></div>
+              <a class="card-link" href="https://cog-ops-website-one.vercel.app/" target="_blank"
+                rel="noopener noreferrer">View live project</a>
             </div>
           </article>
+
+
+          <article class="card">
+            <img src="./gfoa.png" alt="GFOA Automotive Solutions website preview" class="h-52 w-full object-cover"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=900';">
+
+            <div class="p-6">
+              <p class="text-sm font-medium text-brand">Full-Stack Web Application</p>
+
+              <h3 class="mt-1 text-xl font-semibold">GFOA Automotive Solutions</h3>
+
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">
+                A full-stack automotive spare parts platform featuring product
+                management, secure staff authentication, and a responsive product
+                catalogue. Customers can explore available parts and place orders
+                through WhatsApp.
+              </p>
+
+              <div class="mb-6 flex flex-wrap gap-2">
+                <span class="tag">React</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+
+              <a class="card-link" href="https://gfoa-automotive.vercel.app/" target="_blank" rel="noopener noreferrer">
+                View live project
+              </a>
+            </div>
+          </article>
+
 
           <article class="card">
             <img src="./ecommerce.PNG" alt="Beauty E-Store screenshot" class="h-52 w-full object-cover" loading="lazy">
             <div class="p-6">
               <p class="text-sm font-medium text-brand">E-commerce</p>
               <h3 class="mt-1 text-xl font-semibold">Beauty E-Store</h3>
-              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">An online beauty store with product listings and Firebase-powered data integration.</p>
-              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">Firebase</span><span class="tag">Tailwind CSS</span></div>
-              <a class="card-link" href="https://e-commerce-project-drab-theta.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a>
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">An online beauty store with product listings and
+                Firebase-powered data integration.</p>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">Firebase</span><span class="tag">Tailwind
+                  CSS</span></div>
+              <a class="card-link" href="https://e-commerce-project-drab-theta.vercel.app/" target="_blank"
+                rel="noopener noreferrer">View live project</a>
             </div>
           </article>
 
           <article class="card">
-            <img src="./job-track.png" alt="JobTrack application preview" class="h-52 w-full object-cover" loading="lazy">
+            <img src="./job-track.png" alt="JobTrack application preview" class="h-52 w-full object-cover"
+              loading="lazy">
             <div class="p-6">
               <p class="text-sm font-medium text-brand">Full-stack application</p>
               <h3 class="mt-1 text-xl font-semibold">JobTrack</h3>
-              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A job application manager for organizing applications and tracking progress through each hiring stage.</p>
-              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span></div>
-              <a class="card-link" href="https://job-tracker-sable-delta.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a>
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A job application manager for organizing
+                applications and tracking progress through each hiring stage.</p>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">React</span><span class="tag">Node.js</span><span
+                  class="tag">Express</span><span class="tag">MongoDB</span></div>
+              <a class="card-link" href="https://job-tracker-sable-delta.vercel.app/" target="_blank"
+                rel="noopener noreferrer">View live project</a>
             </div>
           </article>
 
@@ -198,20 +319,27 @@
             <div class="p-6">
               <p class="text-sm font-medium text-brand">Web application</p>
               <h3 class="mt-1 text-xl font-semibold">BuildLab</h3>
-              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A frontend project focused on a clear, engaging interface.</p>
-              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-              <a class="card-link" href="https://buildlab-one.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a>
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A frontend project focused on a clear, engaging
+                interface.</p>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                  class="tag">JavaScript</span></div>
+              <a class="card-link" href="https://buildlab-one.vercel.app/" target="_blank"
+                rel="noopener noreferrer">View live project</a>
             </div>
           </article>
 
           <article class="card">
-            <img src="./quiz-app.png" alt="Interactive quiz app preview" class="h-52 w-full object-cover" loading="lazy">
+            <img src="./quiz-app.png" alt="Interactive quiz app preview" class="h-52 w-full object-cover"
+              loading="lazy">
             <div class="p-6">
               <p class="text-sm font-medium text-brand">Interactive application</p>
               <h3 class="mt-1 text-xl font-semibold">Interactive Quiz</h3>
-              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A quiz app that uses JavaScript to respond to user input and track results.</p>
-              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">JavaScript</span><span class="tag">CSS</span></div>
-              <a class="card-link" href="https://my-quiz-peach.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a>
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A quiz app that uses JavaScript to respond to
+                user input and track results.</p>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">JavaScript</span><span class="tag">CSS</span>
+              </div>
+              <a class="card-link" href="https://my-quiz-peach.vercel.app/" target="_blank"
+                rel="noopener noreferrer">View live project</a>
             </div>
           </article>
 
@@ -220,20 +348,26 @@
             <div class="p-6">
               <p class="text-sm font-medium text-brand">Web application</p>
               <h3 class="mt-1 text-xl font-semibold">Summer App</h3>
-              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A lightweight summer-themed app built to practice frontend development.</p>
-              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">Tailwind CSS</span></div>
-              <a class="card-link" href="https://genius-olive-nine.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a>
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A lightweight summer-themed app built to practice
+                frontend development.</p>
+              <div class="mb-6 flex flex-wrap gap-2"><span class="tag">JavaScript</span><span
+                  class="tag">HTML</span><span class="tag">Tailwind CSS</span></div>
+              <a class="card-link" href="https://genius-olive-nine.vercel.app/" target="_blank"
+                rel="noopener noreferrer">View live project</a>
             </div>
           </article>
 
           <article class="card">
-            <img src="./design-sprint.png" alt="Design Sprint mockup preview" class="h-52 w-full object-cover" loading="lazy">
+            <img src="./design-sprint.png" alt="Design Sprint mockup preview" class="h-52 w-full object-cover"
+              loading="lazy">
             <div class="p-6">
               <p class="text-sm font-medium text-brand">UI implementation</p>
               <h3 class="mt-1 text-xl font-semibold">Design Sprint</h3>
-              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A responsive build that turns a mobile design concept into a working web interface.</p>
+              <p class="mt-3 min-h-[5rem] text-sm leading-6 text-body">A responsive build that turns a mobile design
+                concept into a working web interface.</p>
               <div class="mb-6 flex flex-wrap gap-2"><span class="tag">HTML</span><span class="tag">CSS</span></div>
-              <a class="card-link" href="https://mobile-design-inky.vercel.app/" target="_blank" rel="noopener noreferrer">View live project</a>
+              <a class="card-link" href="https://mobile-design-inky.vercel.app/" target="_blank"
+                rel="noopener noreferrer">View live project</a>
             </div>
           </article>
 
@@ -245,14 +379,21 @@
     <section id="contact" class="bg-brand px-5 py-20 text-white sm:px-8">
       <div class="mx-auto max-w-3xl text-center">
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Let’s work together</h2>
-        <p class="mx-auto mt-4 max-w-xl leading-7 text-white/85">I’m open to new opportunities, collaborations, and conversations about projects worth building.</p>
+        <p class="mx-auto mt-4 max-w-xl leading-7 text-white/85">I’m open to new opportunities, collaborations, and
+          conversations about projects worth building.</p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="mailto:toniaebereonyeka@gmail.com" class="rounded-lg bg-white px-7 py-3.5 font-semibold text-brand-dark transition hover:bg-brand-light">Email me</a>
-          <a href="./Tonia's Resume.pdf" download class="rounded-lg border border-white/60 px-7 py-3.5 font-semibold text-white transition hover:bg-white/10">Download CV</a>
+          <a href="mailto:toniaebereonyeka@gmail.com"
+            class="rounded-lg bg-white px-7 py-3.5 font-semibold text-brand-dark transition hover:bg-brand-light">Email
+            me</a>
+          <a href="./Tonia's Resume.pdf" download
+            class="rounded-lg border border-white/60 px-7 py-3.5 font-semibold text-white transition hover:bg-white/10">Download
+            CV</a>
         </div>
         <div class="mt-8 flex justify-center gap-7 text-sm font-medium">
-          <a class="text-white/90 hover:text-white hover:underline" href="https://github.com/ToniaStack" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="text-white/90 hover:text-white hover:underline" href="https://www.linkedin.com/in/tonia-onyeka-ebere" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="text-white/90 hover:text-white hover:underline" href="https://github.com/ToniaStack" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+          <a class="text-white/90 hover:text-white hover:underline"
+            href="https://www.linkedin.com/in/tonia-onyeka-ebere" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
@@ -284,4 +425,5 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
